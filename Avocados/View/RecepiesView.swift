@@ -34,14 +34,27 @@ struct RecepiesView: View {
                     }
                 }
                 
+                
+                
+        // MARK: - Dishes
+                
+                Text("Avocado Dishes")
+                    .fontWeight(.bold)
+                    .titleModifier()
+                
+                DishesView()
+                    .frame(maxWidth:640)
+                
         // MARK: - Footer
                 VStack(alignment: .center, spacing: 20)
                 {
                     Text("All about Avocados")
-                        .font(.system(.title,design : .serif))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("ColorGreenAdaptive"))
-                        .padding(8)
+                        .titleModifier()
+                    
+                        
+                    
+                    
                     Text("Everything you wanted to know about avocados but were too afraid to ask.")
                         .lineLimit(nil)
                         .multilineTextAlignment(.center)
@@ -70,5 +83,23 @@ struct RecepiesView_Previews: PreviewProvider {
     static var previews: some View {
         RecepiesView(headers: headersData)
             .preferredColorScheme(.dark)
+    }
+}
+
+
+// MARK: - Custom View Modifiers
+
+struct Title: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title,design : .serif))
+            .foregroundColor(Color("ColorGreenAdaptive"))
+            .padding(8)
+    }
+}
+
+extension View {
+    func titleModifier() -> some View {
+        self.modifier(Title())
     }
 }

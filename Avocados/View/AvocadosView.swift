@@ -45,6 +45,7 @@ struct AvocadosView: View {
                     .lineLimit(nil)
                     .padding(.horizontal)
                     .lineSpacing(8.0)
+                    .frame(maxWidth : 640)
                        
             }
                 
@@ -70,7 +71,9 @@ struct AvocadosView: View {
 // MARK: - Preview
 struct AvocadosView_Previews: PreviewProvider {
     static var previews: some View {
-        AvocadosView()
-            .preferredColorScheme(.light)
+        Group {
+            AvocadosView()
+                .preferredColorScheme(.light)
+        }
     }
 }

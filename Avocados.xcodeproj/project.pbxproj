@@ -23,6 +23,7 @@
 		8AB6EBC626CA918D00B00FE4 /* RipeningData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6EBC126CA918D00B00FE4 /* RipeningData.txt */; };
 		8AB6EBC726CA918D00B00FE4 /* RecipeData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6EBC226CA918D00B00FE4 /* RecipeData.txt */; };
 		8AB6EBCA26CA92B000B00FE4 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EBC926CA92B000B00FE4 /* HeaderData.swift */; };
+		8AB6EBCD26CA9F6100B00FE4 /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EBCC26CA9F6100B00FE4 /* DishesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8AB6EBC126CA918D00B00FE4 /* RipeningData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RipeningData.txt; sourceTree = "<group>"; };
 		8AB6EBC226CA918D00B00FE4 /* RecipeData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecipeData.txt; sourceTree = "<group>"; };
 		8AB6EBC926CA92B000B00FE4 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
+		8AB6EBCC26CA9F6100B00FE4 /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				8AB6EBB026CA6B1C00B00FE4 /* RecepiesView.swift */,
 				8AB6EBB526CA6C7D00B00FE4 /* RipeningStageView.swift */,
 				8AB6EBB826CA853B00B00FE4 /* HeaderView.swift */,
+				8AB6EBCC26CA9F6100B00FE4 /* DishesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				8AB6EBA326CA67C900B00FE4 /* AvocadosView.swift in Sources */,
 				8AB6EBBC26CA915400B00FE4 /* HeaderModel.swift in Sources */,
 				8AB6EBCA26CA92B000B00FE4 /* HeaderData.swift in Sources */,
+				8AB6EBCD26CA9F6100B00FE4 /* DishesView.swift in Sources */,
 				8AB6EBB926CA853B00B00FE4 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
