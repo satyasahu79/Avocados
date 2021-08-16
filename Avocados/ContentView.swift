@@ -8,14 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
+// MARK: - Properties
+   
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+    // MARK: - Body
+        TabView {
+            AvocadosView()
+                .tabItem {
+                    Image("tabicon-branch")
+                    Text("Avocados")
+                }
+            RecepiesView()
+                .tabItem {
+                    Image("tabicon-book")
+                    Text("Recepies")
+                }
+            RipeningStageView()
+                .tabItem    {
+                    Image("tabicon-avocado")
+                    Text("Ripening")
+                }
+            SettingsView()
+                .tabItem {
+                    Image("tabicon-settings")
+                    Text("Settings")
+                }
+            
+        }   //TabView Ends
+        .accentColor(Color.primary)
+        
     }
 }
 
+
+
+// MARK: - Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
